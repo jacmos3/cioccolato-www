@@ -11,6 +11,8 @@
 
 <p align="center">
   <a href="https://cittàdelcioccolato.it">Visita il sito</a>
+  <br><br>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
 </p>
 
 ---
