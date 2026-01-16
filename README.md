@@ -1,49 +1,61 @@
-# Perugia: Città del Cioccolato
+<p align="center">
+  <img src="assets/favicon.svg" alt="Logo" width="80" height="80">
+</p>
 
-Guida turistica indipendente dedicata a Perugia e alla sua tradizione cioccolatiera.
+<h1 align="center">Perugia: Città del Cioccolato</h1>
 
-## Descrizione
+<p align="center">
+  <strong>La Guida Indipendente</strong><br>
+  Scopri Perugia attraverso la sua tradizione cioccolatiera
+</p>
 
-Sito web editoriale che offre:
+<p align="center">
+  <a href="https://cittàdelcioccolato.it">Visita il sito</a>
+</p>
 
-- **Itinerari** - Weekend goloso, giornata in città, percorsi per famiglie
-- **Luoghi** - Centro storico, musei del cioccolato, arte e cultura
-- **Esperienze** - Tour, laboratori e degustazioni prenotabili
-- **Guide PDF** - Contenuti scaricabili per il viaggio
+---
 
-## Tecnologie
+## Cosa trovi
 
-- HTML5 / CSS3
-- JavaScript vanilla
-- Font: Open Sans, Playfair Display (Google Fonts)
+| Sezione | Descrizione |
+|---------|-------------|
+| **Itinerari** | Weekend goloso, giornata in città, percorsi per famiglie |
+| **Luoghi** | Centro storico, musei del cioccolato, arte e cultura |
+| **Esperienze** | Tour, laboratori e degustazioni prenotabili |
+| **Guide PDF** | Contenuti scaricabili per pianificare il viaggio |
 
-## Struttura
+## Stack
+
+- HTML5 / CSS3 / JavaScript vanilla
+- Google Fonts (Open Sans, Playfair Display)
+- Hosting: server proprietario
+
+## Struttura del progetto
 
 ```
 www/
-├── index.html          # Homepage
-├── itinerari.html      # Itinerari consigliati
-├── centro-storico.html # Guida al centro storico
-├── museo-cioccolato.html
-├── arte-cultura.html
-├── guide-pdf.html      # Landing page guide PDF
-├── chi-siamo.html
-├── privacy.html
-├── cookie.html
-├── termini.html
-├── pubblicita.html
-├── assets/
-│   ├── style.css
-│   ├── cookie-consent.js
-│   └── favicon.*
-└── docs/               # Documentazione interna
+├── index.html              # Homepage
+├── itinerari.html          # Itinerari consigliati
+├── centro-storico.html     # Guida al centro storico
+├── museo-cioccolato.html   # Musei del cioccolato
+├── arte-cultura.html       # Arte e cultura
+├── guide-pdf.html          # Landing page guide PDF
+├── chi-siamo.html          # About
+├── privacy.html            # Privacy policy
+├── cookie.html             # Cookie policy
+├── termini.html            # Termini e condizioni
+├── pubblicita.html         # Info pubblicità
+├── send.php                # Form handler
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── style.css
+    ├── cookie-consent.js
+    └── favicon.*
 ```
 
-## Link
+---
 
-- **Sito live**: https://jacmos3.github.io/cioccolato-www/
-- **Dominio**: cittàdelcioccolato.it
-
-## Licenza
-
-© 2026 Semprox Lab di Moscioni Jacopo. Tutti i diritti riservati.
+<p align="center">
+  <sub>© 2026 Perugia: Città del Cioccolato - La Guida Indipendente. Tutti i diritti riservati.</sub>
+</p>
