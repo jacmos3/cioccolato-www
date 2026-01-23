@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradientShare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d2314"/>
+      <stop offset="100%" style="stop-color:#2a1810"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a84b"/>
+      <stop offset="100%" style="stop-color:#b8923f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradientShare)"/>
+
+  <!-- Decorative pattern left -->
+  <circle cx="80" cy="315" r="200" fill="none" stroke="#d4a84b" stroke-width="1" opacity="0.15"/>
+  <circle cx="80" cy="315" r="250" fill="none" stroke="#d4a84b" stroke-width="1" opacity="0.1"/>
+
+  <!-- Decorative pattern right -->
+  <circle cx="1120" cy="315" r="200" fill="none" stroke="#d4a84b" stroke-width="1" opacity="0.15"/>
+  <circle cx="1120" cy="315" r="250" fill="none" stroke="#d4a84b" stroke-width="1" opacity="0.1"/>
+
+  <!-- Central decorative frame -->
+  <rect x="150" y="100" width="900" height="430" fill="none" stroke="#d4a84b" stroke-width="1" opacity="0.3" rx="5"/>
+
+  <!-- Chocolate drop icon -->
+  <path d="M600 120
+           C600 120 660 180 660 225
+           C660 258 633 285 600 285
+           C567 285 540 258 540 225
+           C540 180 600 120 600 120 Z"
+        fill="url(#goldGradient)"/>
+
+  <!-- Highlight on drop -->
+  <ellipse cx="570" cy="190" rx="12" ry="18" fill="#fdf8f0" opacity="0.3"/>
+
+  <!-- Main title: PERUGIA -->
+  <text x="600" y="370"
+        font-family="Georgia, 'Playfair Display', serif"
+        font-size="80"
+        font-weight="700"
+        fill="#fdf8f0"
+        text-anchor="middle"
+        letter-spacing="12">PERUGIA</text>
+
+  <!-- Decorative lines around subtitle -->
+  <line x1="250" y1="400" x2="450" y2="400" stroke="#d4a84b" stroke-width="2"/>
+  <line x1="750" y1="400" x2="950" y2="400" stroke="#d4a84b" stroke-width="2"/>
+
+  <!-- Diamond decorations -->
+  <polygon points="460,400 470,390 480,400 470,410" fill="#d4a84b"/>
+  <polygon points="720,400 730,390 740,400 730,410" fill="#d4a84b"/>
+
+  <!-- Subtitle: Città del Cioccolato -->
+  <text x="600" y="455"
+        font-family="Georgia, 'Playfair Display', serif"
+        font-size="36"
+        font-style="italic"
+        fill="#d4a84b"
+        text-anchor="middle"
+        letter-spacing="2">Città del Cioccolato</text>
+
+  <!-- Tagline -->
+  <text x="600" y="510"
+        font-family="Arial, 'Open Sans', sans-serif"
+        font-size="18"
+        fill="#fdf8f0"
+        text-anchor="middle"
+        letter-spacing="4"
+        opacity="0.8">LA GUIDA INDIPENDENTE</text>
+
+  <!-- Website URL -->
+  <text x="600" y="580"
+        font-family="Arial, 'Open Sans', sans-serif"
+        font-size="14"
+        fill="#d4a84b"
+        text-anchor="middle"
+        letter-spacing="2"
+        opacity="0.7">perugia-cioccolato.it</text>
+</svg>

@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://cittàdelcioccolato.it/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 
     <!-- Open Graph -->
@@ -21,6 +21,18 @@
     <meta property="og:description" content="Scopri Perugia, città del cioccolato. Itinerari, esperienze e storia.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="it_IT">
+    <meta property="og:url" content="https://cittàdelcioccolato.it/">
+    <meta property="og:image" content="https://cittàdelcioccolato.it/assets/logo-social-share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Perugia: Città del Cioccolato - La Guida Indipendente">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perugia: Città del Cioccolato - La Guida Indipendente">
+    <meta name="twitter:description" content="Scopri Perugia, città del cioccolato. Itinerari, esperienze e storia.">
+    <meta name="twitter:image" content="https://cittàdelcioccolato.it/assets/logo-social-share.png">
+
     <meta name="yandex-verification" content="aae751985ad7c190" />
 </head>
 <body>
@@ -45,12 +57,11 @@
     <header class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="hero-pretitle">La Guida Indipendente</p>
-            <h1>Perugia: Città del Cioccolato</h1>
-            <p class="hero-subtitle">Storia, itinerari ed esperienze nel cuore dell'Umbria</p>
+            <h1>Perugia.<br>Città del Cioccolato.</h1>
+            <p class="hero-subtitle">La guida indipendente per chi vuole andare oltre i soliti itinerari</p>
             <div class="hero-cta">
-                <a href="#esperienze" class="btn btn-primary">Scopri le esperienze</a>
-                <a href="guide-pdf.html" class="btn btn-secondary">Scarica la guida PDF</a>
+                <a href="#esperienze" class="btn btn-primary">Prenota un'esperienza</a>
+                <a href="guide-pdf.html" class="btn btn-secondary">Guida PDF</a>
             </div>
         </div>
     </header>
@@ -59,88 +70,124 @@
     <section class="section intro-badge">
         <div class="container">
             <div class="badge-content">
-                <div class="badge-icon">&#9733;</div>
+                <svg class="badge-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
                 <div class="badge-text">
-                    <strong>Progetto editoriale indipendente</strong>
-                    <span>Non affiliato a musei, aziende o eventi. Solo informazioni utili per il tuo viaggio.</span>
+                    <strong>Guida indipendente</strong>
+                    <span>Non affiliata a musei, aziende o eventi. Solo informazioni utili.</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Numeri del turismo -->
+    <!-- Perché Perugia - Layout full-width con numeri -->
     <section class="section numeri">
         <div class="container">
-            <h2>Perché Perugia e il Cioccolato</h2>
+            <div class="numeri-header">
+                <h2>Perché proprio Perugia?</h2>
+                <p class="numeri-intro">Una città che ha fatto del cioccolato un'identità. Non un brand, non un museo: un modo di vivere.</p>
+            </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <span class="stat-number">32%</span>
-                    <span class="stat-label">dei turisti in Umbria sceglie l'enogastronomia</span>
+                    <span class="stat-number">1907</span>
+                    <span class="stat-label">L'anno in cui nasce la Perugina. Una confetteria in centro, un mastro pasticcere che sperimenta.</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">+116%</span>
-                    <span class="stat-label">di spesa durante Eurochocolate 2024</span>
+                    <span class="stat-number">1922</span>
+                    <span class="stat-label">Viene inventato il Bacio. Nessuno immaginava che sarebbe diventato un simbolo.</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">7M+</span>
-                    <span class="stat-label">presenze turistiche in Umbria nel 2024</span>
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Visitatori ogni anno ad Eurochocolate. Il centro storico diventa un villaggio del cioccolato.</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Storia -->
-    <section id="storia" class="section storia">
+    <!-- Storia - Layout side-by-side -->
+    <section id="storia" class="section storia-nuova">
         <div class="container">
-            <h2>La Tradizione Cioccolatiera di Perugia</h2>
-            <div class="content-grid">
-                <div class="text-content">
-                    <p>La storia del cioccolato a Perugia inizia nel 1907, quando nasce la Perugina. Da piccola confetteria artigianale, l'azienda cresce fino a inventare nel 1922 il celebre Bacio, diventato simbolo del romanticismo italiano nel mondo.</p>
-                    <p>Oggi Perugia è riconosciuta come una delle capitali italiane del cioccolato, grazie a una tradizione centenaria, eventi internazionali come Eurochocolate e un patrimonio di maestri cioccolatieri che continuano a innovare.</p>
-                    <p>Questa guida ti aiuta a scoprire questa tradizione: dalla storia alle esperienze da vivere, dagli itinerari ai luoghi imperdibili.</p>
+            <div class="storia-grid">
+                <div class="storia-text">
+                    <h2>Non è solo cioccolato</h2>
+                    <p class="storia-lead">È una città etrusca arrampicata su un colle. Vicoli medievali che sbucano su piazze rinascimentali. E poi sì, c'è il cioccolato.</p>
+                    <p>La tradizione inizia con la Perugina, ma oggi va oltre. Cioccolaterie artigianali nel centro storico. Laboratori dove si può mettere le mani in pasta. Due musei che raccontano storie diverse: uno aziendale, uno esperienziale.</p>
+                    <p>Questa guida ti aiuta a orientarti. Senza slogan, senza pubblicità mascherata.</p>
                 </div>
-                <div class="features">
-                    <div class="feature">
-                        <span class="feature-icon">&#128214;</span>
-                        <h3>Storia Centenaria</h3>
-                        <p>Dal 1907 ad oggi: oltre un secolo di tradizione dolciaria</p>
+                <div class="storia-features">
+                    <div class="feature-row">
+                        <svg class="feature-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        <div>
+                            <h3>La storia vera</h3>
+                            <p>Non la versione da brochure. Come nasce una tradizione, chi l'ha costruita, perché resiste.</p>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">&#127881;</span>
-                        <h3>Eurochocolate</h3>
-                        <p>Il festival internazionale del cioccolato, ogni novembre</p>
+                    <div class="feature-row">
+                        <svg class="feature-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <div>
+                            <h3>I posti giusti</h3>
+                            <p>Cioccolaterie artigianali, laboratori, musei. Quelli che valgono davvero una visita.</p>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">&#128161;</span>
-                        <h3>Innovazione</h3>
-                        <p>Nuovi musei, esperienze e laboratori per tutti</p>
+                    <div class="feature-row">
+                        <svg class="feature-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <div>
+                            <h3>Quando andare</h3>
+                            <p>Eurochocolate a novembre, ma anche tutto il resto dell'anno. Ogni stagione ha il suo perché.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Luoghi da Visitare -->
-    <section id="luoghi" class="section scopri">
+    <!-- Luoghi - Layout alternativo -->
+    <section id="luoghi" class="section luoghi">
         <div class="container">
-            <h2>Luoghi da Visitare</h2>
-            <p class="section-intro">I punti di interesse per chi vuole scoprire Perugia e la sua tradizione cioccolatiera</p>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-icon">&#127963;</div>
-                    <h3><a href="centro-storico.html">Centro Storico</a></h3>
-                    <p>Piazza IV Novembre, Fontana Maggiore, Rocca Paolina e i vicoli medievali del cuore di Perugia.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#127981;</div>
-                    <h3><a href="museo-cioccolato.html">Musei del Cioccolato</a></h3>
-                    <p>Casa del Cioccolato Perugina a San Sisto e il nuovo museo esperienziale in centro.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#127912;</div>
-                    <h3><a href="arte-cultura.html">Arte e Cultura</a></h3>
-                    <p>Galleria Nazionale dell'Umbria, opere del Perugino e il patrimonio artistico della città.</p>
-                </div>
+            <h2>Dove andare</h2>
+            <p class="section-intro">Tre aree da esplorare, ognuna con il suo carattere</p>
+
+            <div class="luoghi-grid">
+                <a href="centro-storico.html" class="luogo-card luogo-featured">
+                    <div class="luogo-content">
+                        <svg class="luogo-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                        <h3>Centro Storico</h3>
+                        <p>Piazza IV Novembre, Fontana Maggiore, i vicoli medievali. E le cioccolaterie artigianali nascoste tra le botteghe.</p>
+                        <span class="luogo-link">Esplora il centro</span>
+                    </div>
+                </a>
+
+                <a href="museo-cioccolato.html" class="luogo-card">
+                    <div class="luogo-content">
+                        <svg class="luogo-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                        </svg>
+                        <h3>I Musei del Cioccolato</h3>
+                        <p>Due esperienze diverse: la fabbrica Perugina a San Sisto, il museo interattivo in centro. Quale scegliere?</p>
+                        <span class="luogo-link">Confronta i musei</span>
+                    </div>
+                </a>
+
+                <a href="arte-cultura.html" class="luogo-card">
+                    <div class="luogo-content">
+                        <svg class="luogo-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <h3>Arte e Cultura</h3>
+                        <p>Galleria Nazionale, affreschi del Perugino, chiese romaniche. Il cioccolato è solo l'inizio.</p>
+                        <span class="luogo-link">Scopri l'arte</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -148,56 +195,82 @@
     <!-- Esperienze -->
     <section id="esperienze" class="section esperienze">
         <div class="container">
-            <h2>Esperienze da Prenotare</h2>
-            <p class="section-intro">Tour, laboratori e degustazioni per vivere il cioccolato in prima persona</p>
-            <div class="cards">
-                <div class="card card-featured">
-                    <div class="card-badge">Consigliato</div>
-                    <div class="card-icon">&#127851;</div>
+            <h2>Cosa prenotare</h2>
+            <p class="section-intro">Tour e laboratori per chi vuole fare, non solo guardare</p>
+
+            <div class="esperienze-grid">
+                <div class="esperienza-card esperienza-featured">
+                    <div class="esperienza-badge">Consigliato</div>
+                    <svg class="esperienza-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"/>
+                    </svg>
                     <h3>Tour Casa del Cioccolato</h3>
-                    <p>Visita la fabbrica Perugina: museo, linea di produzione e degustazione di Baci appena fatti.</p>
+                    <p>Visita la fabbrica Perugina: museo, produzione, degustazione. Vedi come nascono i Baci, non solo dove si vendono.</p>
                     <a href="https://www.getyourguide.com/perugia-l1507/chocolate-tours-workshops-tc246/?partner_id=GEUEP8Y&cmp=share_to_earn" target="_blank" rel="noopener sponsored" class="btn btn-small">Prenota su GetYourGuide</a>
                 </div>
-                <div class="card">
-                    <div class="card-icon">&#128747;</div>
+
+                <div class="esperienza-card">
+                    <svg class="esperienza-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
                     <h3>Gita da Roma</h3>
-                    <p>Tour di una giornata da Roma con visita a Perugia e degustazione di cioccolato.</p>
-                    <a href="https://www.getyourguide.com/rome-l33/day-trip-to-perugia-with-chocolate-tasting-from-rome-t648091/?partner_id=GEUEP8Y&cmp=share_to_earn" target="_blank" rel="noopener sponsored" class="btn btn-small">Scopri di più</a>
+                    <p>Parti la mattina, torni la sera. Trasporto, guida, degustazione inclusi. Zero stress.</p>
+                    <a href="https://www.getyourguide.com/rome-l33/day-trip-to-perugia-with-chocolate-tasting-from-rome-t648091/?partner_id=GEUEP8Y&cmp=share_to_earn" target="_blank" rel="noopener sponsored" class="btn btn-small">Scopri il tour</a>
                 </div>
-                <div class="card">
-                    <div class="card-icon">&#127860;</div>
-                    <h3>Laboratori Pratici</h3>
-                    <p>Impara a lavorare il cioccolato come un maestro cioccolatiere in workshop dedicati.</p>
+
+                <div class="esperienza-card">
+                    <svg class="esperienza-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                    </svg>
+                    <h3>Laboratorio pratico</h3>
+                    <p>Metti le mani nel cioccolato. Impara le tecniche base dai maestri cioccolatieri.</p>
                     <a href="https://www.viator.com/Perugia/d22034-ttd?pid=P00284702&mcid=42383&medium=link" target="_blank" rel="noopener sponsored" class="btn btn-small">Vedi su Viator</a>
                 </div>
             </div>
+
             <p class="affiliate-disclosure">I link di prenotazione sono affiliati. Prenotando, supporti questo progetto senza costi aggiuntivi.</p>
         </div>
     </section>
 
     <!-- Itinerari -->
-    <section id="itinerari" class="section percorsi">
+    <section id="itinerari" class="section itinerari-home">
         <div class="container">
-            <h2>Itinerari Consigliati</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-icon">&#128197;</div>
-                    <h3>Weekend Goloso</h3>
-                    <p>2 giorni tra centro storico, musei del cioccolato e degustazioni. Perfetto per coppie.</p>
-                    <a href="itinerari.html#weekend" class="card-link">Leggi l'itinerario</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#128694;</div>
-                    <h3>Perugia in un Giorno</h3>
-                    <p>Cosa vedere se hai solo una giornata: i luoghi imperdibili e le tappe golosa.</p>
-                    <a href="itinerari.html#giornata" class="card-link">Leggi l'itinerario</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">&#128106;</div>
-                    <h3>Con i Bambini</h3>
-                    <p>Percorso family-friendly con laboratori, degustazioni e attività per i più piccoli.</p>
-                    <a href="itinerari.html#famiglie" class="card-link">Leggi l'itinerario</a>
-                </div>
+            <h2>Come organizzare il viaggio</h2>
+            <p class="section-intro">Tre percorsi per tre tipi di viaggio</p>
+
+            <div class="itinerari-grid">
+                <a href="itinerari.html#weekend" class="itinerario-card">
+                    <div class="itinerario-header">
+                        <svg class="itinerario-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                        <span class="itinerario-durata">2 giorni</span>
+                    </div>
+                    <h3>Weekend goloso</h3>
+                    <p>Sabato centro storico e cioccolaterie. Domenica fabbrica Perugina e pranzo umbro. Il classico, fatto bene.</p>
+                </a>
+
+                <a href="itinerari.html#giornata" class="itinerario-card">
+                    <div class="itinerario-header">
+                        <svg class="itinerario-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="itinerario-durata">1 giorno</span>
+                    </div>
+                    <h3>Perugia in un giorno</h3>
+                    <p>Hai solo poche ore? Ecco cosa vedere assolutamente e cosa puoi saltare senza rimpianti.</p>
+                </a>
+
+                <a href="itinerari.html#famiglie" class="itinerario-card">
+                    <div class="itinerario-header">
+                        <svg class="itinerario-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span class="itinerario-durata">Family</span>
+                    </div>
+                    <h3>Con i bambini</h3>
+                    <p>Laboratori di cioccolato, minimetrò, Rocca Paolina. I posti che funzionano davvero con i più piccoli.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -207,18 +280,18 @@
         <div class="container">
             <div class="cta-box">
                 <div class="cta-content">
-                    <h2>Scarica la Guida PDF</h2>
-                    <p>Porta Perugia sempre con te: itinerari dettagliati, mappe, indirizzi utili e consigli pratici in un ebook scaricabile.</p>
+                    <h2>Porta Perugia con te</h2>
+                    <p>Itinerario completo ora per ora. Mappa delle cioccolaterie. Dove mangiare senza finire nelle trappole per turisti. Tutto in un PDF da tenere sul telefono.</p>
                     <ul class="cta-features">
-                        <li>Itinerario weekend completo</li>
-                        <li>Mappa delle cioccolaterie</li>
-                        <li>Consigli su dove mangiare e dormire</li>
+                        <li>Itinerario weekend dettagliato</li>
+                        <li>Indirizzi verificati di cioccolaterie e ristoranti</li>
+                        <li>Consigli su dove dormire</li>
                         <li>Aggiornamenti gratuiti</li>
                     </ul>
                 </div>
                 <div class="cta-action">
-                    <span class="cta-price">€9,90</span>
-                    <a href="guide-pdf.html" class="btn btn-primary btn-large">Scopri la guida</a>
+                    <span class="cta-price">9,90 €</span>
+                    <a href="guide-pdf.html" class="btn btn-primary btn-large">Guarda la guida</a>
                 </div>
             </div>
         </div>
@@ -229,22 +302,30 @@
         <div class="container">
             <div class="alloggio-content">
                 <div class="alloggio-text">
-                    <h2>Dove Alloggiare</h2>
-                    <p>Per vivere Perugia al meglio, scegli un alloggio nel centro storico. <strong>WellStay Perugia</strong> offre appartamenti accoglienti e centrali, perfetti per esplorare la città e i percorsi cioccolatieri a piedi.</p>
-                    <a href="https://wellstayperugia.it" target="_blank" rel="noopener" class="btn btn-primary">Scopri WellStay Perugia</a>
+                    <h2>Dove dormire</h2>
+                    <p>Il centro storico è piccolo: tutto è raggiungibile a piedi. Cerca un alloggio tra Piazza IV Novembre e Piazza Italia, così la sera esci e sei già nella passeggiata.</p>
+                    <p><strong>WellStay Perugia</strong> offre appartamenti nel cuore della città. Posizione perfetta per esplorare a piedi.</p>
+                    <a href="https://wellstayperugia.it" target="_blank" rel="noopener" class="btn btn-primary">Vedi WellStay Perugia</a>
                 </div>
                 <div class="alloggio-features">
                     <div class="alloggio-feature">
-                        <span>&#128205;</span>
-                        <span>Posizione centrale</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Centro storico</span>
                     </div>
                     <div class="alloggio-feature">
-                        <span>&#127968;</span>
-                        <span>Appartamenti confortevoli</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                        <span>Appartamenti</span>
                     </div>
                     <div class="alloggio-feature">
-                        <span>&#11088;</span>
-                        <span>Ospitalità umbra</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                        <span>Recensioni top</span>
                     </div>
                 </div>
             </div>
@@ -254,25 +335,24 @@
     <!-- Eventi -->
     <section class="section eventi">
         <div class="container">
-            <h2>Eventi e Appuntamenti</h2>
-            <div class="cards">
-                <div class="card card-featured">
-                    <div class="card-badge">Ogni anno</div>
-                    <div class="card-icon">&#127851;</div>
+            <h2>Quando andare</h2>
+            <div class="eventi-grid">
+                <div class="evento-card evento-featured">
+                    <div class="evento-badge">Ottobre/Novembre</div>
                     <h3>Eurochocolate</h3>
-                    <p>Ogni novembre il centro storico di Perugia ospita il festival internazionale del cioccolato. 10 giorni di stand, degustazioni, laboratori e sculture di cioccolato.</p>
+                    <p>Il festival che ha reso Perugia famosa. 10 giorni di stand, laboratori, sculture di cioccolato. Il centro storico si trasforma. Prenota l'alloggio con mesi di anticipo.</p>
                     <a href="https://www.eurochocolate.com" target="_blank" rel="noopener" class="btn btn-small">Sito ufficiale</a>
                 </div>
-                <div class="card">
-                    <div class="card-icon">&#127963;</div>
+
+                <div class="evento-card">
                     <h3>Casa del Cioccolato Perugina</h3>
-                    <p>Tour della fabbrica, museo storico e laboratori pratici tutto l'anno. Degustazioni e corsi per adulti e bambini a San Sisto.</p>
-                    <a href="https://www.perugina.com/it/casa-del-cioccolato" target="_blank" rel="noopener" class="btn btn-small">Sito ufficiale</a>
+                    <p>Aperta tutto l'anno. Tour guidato della fabbrica, museo storico, laboratori. A San Sisto, 15 minuti dal centro in auto.</p>
+                    <a href="https://www.perugina.com/it/casa-del-cioccolato" target="_blank" rel="noopener" class="btn btn-small">Info e prenotazioni</a>
                 </div>
-                <div class="card">
-                    <div class="card-icon">&#127856;</div>
+
+                <div class="evento-card">
                     <h3>Museo Città del Cioccolato</h3>
-                    <p>Esperienza immersiva nel centro storico di Perugia. Percorso multimediale, degustazioni guidate e workshop di cioccolateria.</p>
+                    <p>Nel centro storico, nell'ex Mercato Coperto. Percorso interattivo, degustazioni, workshop. Comodo se non hai l'auto.</p>
                     <a href="https://www.cittadelcioccolato.it" target="_blank" rel="noopener" class="btn btn-small">Sito ufficiale</a>
                 </div>
             </div>
@@ -282,14 +362,12 @@
     <!-- Disclaimer -->
     <section class="section disclaimer">
         <div class="container">
-            <h3>Nota Importante</h3>
-            <p>Questo sito è un <strong>progetto editoriale indipendente</strong> dedicato alla promozione turistica e culturale di Perugia e dell'Umbria.</p>
-            <p>Non è affiliato, collegato o riconducibile a Destinazione Cioccolato S.r.l., GIOFORM S.r.l., Eurochocolate, Nestlé, Perugina o altri marchi commerciali. Tutti i marchi citati appartengono ai rispettivi proprietari.</p>
-            <p><strong>Per informazioni ufficiali:</strong></p>
+            <h3>Nota importante</h3>
+            <p>Questo sito è un <strong>progetto editoriale indipendente</strong>. Non siamo affiliati a Destinazione Cioccolato S.r.l., GIOFORM S.r.l., Eurochocolate, Nestlé, Perugina o altri marchi. Le informazioni sono fornite a scopo orientativo. Per dettagli ufficiali:</p>
             <ul>
-                <li><a href="https://www.cittadelcioccolato.it" target="_blank" rel="noopener">Museo Città del Cioccolato (ufficiale)</a></li>
-                <li><a href="https://www.perugina.com/it/casa-del-cioccolato" target="_blank" rel="noopener">Casa del Cioccolato Perugina (ufficiale)</a></li>
-                <li><a href="https://www.eurochocolate.com" target="_blank" rel="noopener">Eurochocolate (ufficiale)</a></li>
+                <li><a href="https://www.cittadelcioccolato.it" target="_blank" rel="noopener">Museo Città del Cioccolato</a></li>
+                <li><a href="https://www.perugina.com/it/casa-del-cioccolato" target="_blank" rel="noopener">Casa del Cioccolato Perugina</a></li>
+                <li><a href="https://www.eurochocolate.com" target="_blank" rel="noopener">Eurochocolate</a></li>
                 <li><a href="https://www.comune.perugia.it" target="_blank" rel="noopener">Comune di Perugia</a></li>
             </ul>
         </div>
@@ -301,7 +379,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Perugia: Città del Cioccolato</h4>
-                    <p>La guida indipendente alla tradizione cioccolatiera di Perugia e dell'Umbria.</p>
+                    <p>Guida indipendente a Perugia e alla tradizione cioccolatiera umbra.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Link Utili</h4>
@@ -341,7 +419,7 @@
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-banner-content">
             <div class="cookie-banner-text">
-                <p>Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie analitici (Google Analytics) per migliorare la tua esperienza. <a href="cookie.html">Maggiori informazioni</a></p>
+                <p>Questo sito utilizza cookie tecnici e, con il tuo consenso, cookie analitici per migliorare la tua esperienza. <a href="cookie.html">Maggiori informazioni</a></p>
             </div>
             <div class="cookie-banner-buttons">
                 <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Accetta</button>
