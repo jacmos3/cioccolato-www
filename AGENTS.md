@@ -38,6 +38,6 @@ Read `README.md` before changing site structure, the advertising form, consent, 
 ## Verification and resource safety
 
 - Prefer targeted PHP syntax, HTML, JavaScript, link, metadata, consent, and sitemap checks before local servers or browser automation.
-- This machine has 8 GB of RAM. Serialize browser automation, local servers, media processing, and other memory-intensive work.
+- Before starting memory- or CPU-intensive work, inspect the current machine's available resources and active workload. If resource headroom is limited or unknown, run browser automation, local servers, media processing, and other heavy work sequentially.
 - Prefer targeted `rg -I` searches. If `git grep` is necessary, use `--threads=1 -I` and exclude images, media, generated files, and other binary assets.
 - If a command times out or exits abnormally, inspect and terminate only the exact orphaned process before continuing.
