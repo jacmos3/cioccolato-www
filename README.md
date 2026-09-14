@@ -29,11 +29,11 @@ Il sito raccoglie contenuti e strumenti per organizzare una visita a Perugia:
 
 - guide al centro storico, ai musei del cioccolato e al patrimonio artistico;
 - itinerari per weekend, visite giornaliere e famiglie;
-- guide e approfondimenti consultabili gratuitamente online;
+- guide e approfondimenti consultabili online;
 - rinvii informativi ai canali ufficiali dei soggetti citati.
 
 Il progetto è indipendente e non rappresenta musei, aziende, eventi o istituzioni citati nelle pagine. Per orari, prezzi e prenotazioni vengono indicati, quando disponibili, i rispettivi siti ufficiali.
-Il sito non vende prodotti o servizi, non ospita pubblicità e non utilizza collegamenti di affiliazione.
+Il sito privilegia contenuti editoriali e rinvii ai canali ufficiali.
 
 ## Architettura
 
