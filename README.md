@@ -20,7 +20,6 @@
   <img src="https://img.shields.io/badge/HTML5-statico-E34F26?logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-responsive-1572B6?logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=111" alt="JavaScript">
-  <img src="https://img.shields.io/badge/PHP-form_email-777BB4?logo=php&logoColor=white" alt="PHP">
   <img src="https://img.shields.io/badge/licenza-GPL--3.0-blue" alt="Licenza GPL-3.0">
 </p>
 
@@ -30,73 +29,32 @@ Il sito raccoglie contenuti e strumenti per organizzare una visita a Perugia:
 
 - guide al centro storico, ai musei del cioccolato e al patrimonio artistico;
 - itinerari per weekend, visite giornaliere e famiglie;
-- esperienze prenotabili tramite link affiliati dichiarati;
-- guide digitali vendute e distribuite tramite Gumroad;
-- informazioni per attività interessate a pubblicità e partnership.
+- guide e approfondimenti consultabili gratuitamente online;
+- rinvii informativi ai canali ufficiali dei soggetti citati.
 
 Il progetto è indipendente e non rappresenta musei, aziende, eventi o istituzioni citati nelle pagine. Per orari, prezzi e prenotazioni vengono indicati, quando disponibili, i rispettivi siti ufficiali.
+Il sito non vende prodotti o servizi, non ospita pubblicità e non utilizza collegamenti di affiliazione.
 
 ## Architettura
 
-Non sono presenti framework, package manager, database o processo di build. Il progetto è composto da pagine HTML multipagina, un foglio di stile condiviso, JavaScript vanilla e un endpoint PHP per il form pubblicitario.
+Non sono presenti framework, package manager, database o processo di build. Il progetto è composto da pagine HTML multipagina, un foglio di stile condiviso e JavaScript vanilla.
 
 | Componente | Funzione |
 | --- | --- |
 | HTML5 | Contenuti e struttura delle pagine |
 | CSS3 | Design responsive e componenti condivisi |
-| JavaScript | Consenso cookie, caricamento condizionale di Google Analytics e invio asincrono del form |
-| PHP | Validazione del form e invio email tramite `mail()` |
+| JavaScript | Consenso cookie e caricamento condizionale di Google Analytics |
 | Google Fonts | `Inter` e `Playfair Display` |
-| Gumroad | Vendita e distribuzione delle guide PDF |
-| GetYourGuide / Viator | Esperienze e collegamenti affiliati |
 
 ## Avvio locale
 
-### Anteprima completa con PHP
-
-È il metodo consigliato perché rende disponibile anche `send.php`.
-
-Requisiti:
-
-- PHP 7.4 o successivo;
-- un sistema di invio email configurato, se si vuole provare realmente il form.
-
-```bash
-git clone https://github.com/jacmos3/cioccolato-www.git
-cd cioccolato-www
-php -S 127.0.0.1:8000
-```
-
-Apri [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-Il server integrato di PHP permette di verificare la richiesta al backend, ma `mail()` può comunque fallire in locale se non è configurato un trasporto email.
-
-### Sola anteprima statica
-
-Per controllare layout, navigazione e contenuti senza usare PHP:
+Per controllare layout, navigazione e contenuti:
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Con questa modalità il form pubblicitario non può essere inviato.
-
 ## Configurazione
-
-### Form email
-
-Il form presente in `pubblicita.html` invia i dati a `send.php` tramite `fetch()`. Il destinatario è configurato all'inizio del file:
-
-```php
-$email_destinatario = 'support@semproxlab.it';
-```
-
-In produzione il server deve:
-
-- eseguire PHP;
-- consentire l'uso di `mail()` o fornire un trasporto email equivalente;
-- autorizzare il mittente `noreply@cittadelcioccolato.it`;
-- servire le risposte JSON restituite da `send.php`.
 
 ### Cookie e analytics
 
@@ -132,13 +90,11 @@ Quando si aggiunge o si rinomina una pagina pubblica, vanno aggiornati almeno na
 ├── museo-cioccolato.html      # Confronto tra i musei del cioccolato
 ├── arte-cultura.html          # Arte, musei e luoghi culturali
 ├── itinerari.html             # Itinerari di visita
-├── guide-pdf.html             # Catalogo e vendita delle guide digitali
+├── guide-pdf.html             # Indice delle guide editoriali gratuite
 ├── chi-siamo.html             # Identità e indipendenza editoriale
-├── pubblicita.html            # Offerta pubblicitaria e form di contatto
 ├── privacy.html               # Privacy Policy
 ├── cookie.html                # Cookie Policy
-├── termini.html               # Termini e condizioni
-├── send.php                   # Backend del form email
+├── termini.html               # Note legali
 ├── robots.txt
 ├── sitemap.xml
 ├── LICENSE
@@ -157,27 +113,24 @@ Quando si aggiunge o si rinomina una pagina pubblica, vanno aggiornati almeno na
 
 ## Pubblicazione
 
-Il deploy non richiede compilazione. È sufficiente pubblicare il contenuto del repository nella document root di un hosting con supporto PHP.
+Il deploy non richiede compilazione. È sufficiente pubblicare il contenuto del repository nella document root dell'hosting.
 
 Prima della pubblicazione:
 
-1. verificare i link ufficiali e i collegamenti affiliati;
+1. verificare i link ufficiali;
 2. controllare canonical, metadati social e `sitemap.xml`;
-3. provare il form su un ambiente con email configurata;
-4. verificare accettazione e rifiuto dei cookie in una sessione pulita;
-5. controllare homepage e pagine principali su desktop e mobile;
-6. aggiornare le date `lastmod` della sitemap per i contenuti modificati.
+3. verificare accettazione e rifiuto dei cookie in una sessione pulita;
+4. controllare homepage e pagine principali su desktop e mobile;
+5. aggiornare le date `lastmod` della sitemap per i contenuti modificati.
 
 ## Servizi esterni
 
-Il sito può collegarsi o affidarsi a servizi di terze parti:
+Il sito utilizza o può collegarsi a servizi di terze parti:
 
 - Google Fonts e Google Analytics;
-- Gumroad per acquisto e download delle guide;
-- GetYourGuide e Viator per link affiliati;
 - siti ufficiali di musei, eventi, strutture e istituzioni.
 
-Disponibilità, contenuti e condizioni di questi servizi non sono controllati dal repository. I link commerciali devono mantenere attributi coerenti, come `rel="noopener sponsored"`.
+Disponibilità, contenuti e condizioni di questi servizi non sono controllati dal repository. I link esterni aperti in una nuova scheda devono mantenere attributi sicuri, come `rel="noopener"`.
 
 ## Licenza
 

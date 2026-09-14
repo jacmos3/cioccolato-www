@@ -536,14 +536,6 @@ a:hover {
     margin-bottom: 1.25rem;
 }
 
-.affiliate-disclosure {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: var(--text-light);
-    font-style: italic;
-}
-
 /* Itinerari Home */
 .itinerari-home {
     background: var(--cream-dark);
@@ -862,16 +854,6 @@ a:hover {
     opacity: 0.7;
 }
 
-.footer-affiliate {
-    font-size: 0.8rem !important;
-    opacity: 0.5 !important;
-    margin-top: 0.5rem;
-}
-
-.footer-affiliate a {
-    color: var(--gold-light);
-}
-
 /* Page Content */
 .page-content {
     padding-top: 60px;
@@ -1058,7 +1040,7 @@ a:hover {
 
 /* Boxes */
 .disclaimer-box,
-.affiliate-box {
+.transparency-box {
     background: var(--cream-dark);
     padding: 2rem;
     border-radius: 12px;
@@ -1067,26 +1049,26 @@ a:hover {
 }
 
 .disclaimer-box h3,
-.affiliate-box h3 {
+.transparency-box h3 {
     color: var(--chocolate);
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
 
 .disclaimer-box ul,
-.affiliate-box ul {
+.transparency-box ul {
     margin: 1rem 0 1rem 1.5rem;
     list-style: disc;
 }
 
 .disclaimer-box li,
-.affiliate-box li {
+.transparency-box li {
     margin-bottom: 0.5rem;
     color: var(--text-light);
 }
 
 .disclaimer-box a,
-.affiliate-box a {
+.transparency-box a {
     color: var(--chocolate);
 }
 
