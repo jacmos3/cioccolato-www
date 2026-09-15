@@ -115,7 +115,22 @@ Quando si aggiunge o si rinomina una pagina pubblica, vanno aggiornati almeno na
 
 ## Pubblicazione
 
-Il deploy non richiede compilazione. È sufficiente pubblicare il contenuto del repository nella document root dell'hosting.
+Il sito viene preparato per Cloudflare Pages tramite uno script a lista chiusa, in modo che documentazione interna, configurazioni di sviluppo e archivi locali non entrino nell'artefatto pubblico.
+
+```bash
+./scripts/build-cloudflare-pages.sh
+```
+
+Lo script ricrea la cartella ignorata `dist/`, che deve essere impostata come directory di output di Cloudflare Pages. Non pubblicare direttamente la radice del repository.
+
+Impostazioni Cloudflare Pages:
+
+| Campo | Valore |
+| --- | --- |
+| Production branch | `main` |
+| Build command | `./scripts/build-cloudflare-pages.sh` |
+| Build output directory | `dist` |
+| Root directory | `/` |
 
 Prima della pubblicazione:
 
