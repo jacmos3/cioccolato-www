@@ -101,7 +101,7 @@ a:hover {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-links a {
@@ -120,6 +120,20 @@ a:hover {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 769px) {
+    .logo-text {
+        font-size: 1.05rem;
+    }
+
+    .nav-links {
+        gap: 0.85rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
     }
 }
 
@@ -878,6 +892,210 @@ a:hover {
     margin-bottom: 1rem;
     color: var(--text-light);
     line-height: 1.7;
+}
+
+/* Città e territori del cioccolato */
+.atlas-hero .hero-content {
+    max-width: 900px;
+}
+
+.atlas-introduction {
+    background: var(--cream);
+    padding-bottom: 56px;
+}
+
+.atlas-preview {
+    background: var(--cream);
+}
+
+.atlas-preview .btn {
+    margin-top: 0.75rem;
+}
+
+.atlas-criteria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.atlas-criteria span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(92, 58, 33, 0.2);
+    border-radius: 999px;
+    color: var(--chocolate);
+    background: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.atlas-region {
+    background: var(--cream-dark);
+}
+
+.atlas-region-alt {
+    background: var(--cream);
+}
+
+.atlas-section-heading {
+    max-width: 720px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.atlas-section-heading h2 {
+    margin-bottom: 1rem;
+}
+
+.atlas-section-heading > p:last-child {
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.atlas-eyebrow {
+    color: var(--chocolate-light);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.destination-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid rgba(92, 58, 33, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 3px 18px rgba(61, 35, 20, 0.05);
+}
+
+.destination-card-featured {
+    border-color: rgba(212, 168, 75, 0.8);
+}
+
+.destination-index {
+    position: absolute;
+    top: -0.25rem;
+    right: 0.75rem;
+    color: rgba(92, 58, 33, 0.06);
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.destination-place {
+    position: relative;
+    color: var(--chocolate-light);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.55rem;
+}
+
+.destination-card h3 {
+    position: relative;
+    color: var(--chocolate-dark);
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+.destination-card > p:not(.destination-place) {
+    position: relative;
+    color: var(--text-light);
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.destination-reason {
+    padding-top: 1rem;
+    margin-top: auto;
+    border-top: 1px solid var(--cream-dark);
+}
+
+.destination-reason strong {
+    color: var(--chocolate);
+}
+
+.destination-sources {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.8rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream-dark);
+    font-size: 0.78rem;
+}
+
+.destination-sources span {
+    width: 100%;
+    color: var(--text-light);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.destination-sources a {
+    color: var(--chocolate);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(92, 58, 33, 0.3);
+    text-underline-offset: 3px;
+}
+
+.atlas-method {
+    background: var(--cream-dark);
+}
+
+.atlas-method h2 {
+    text-align: left;
+}
+
+.source-update {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .atlas-criteria {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .atlas-criteria span {
+        justify-content: center;
+    }
+
+    .destination-card {
+        padding: 1.5rem;
+    }
 }
 
 .intro-text {

@@ -30,6 +30,7 @@ Il sito raccoglie contenuti e strumenti per organizzare una visita a Perugia:
 - guide al centro storico, ai musei del cioccolato e al patrimonio artistico;
 - itinerari per weekend, visite giornaliere e famiglie;
 - guide e approfondimenti consultabili online;
+- un percorso comparativo tra città e territori legati alla cultura del cioccolato;
 - rinvii informativi ai canali ufficiali dei soggetti citati.
 
 Il progetto è indipendente e non rappresenta musei, aziende, eventi o istituzioni citati nelle pagine. Per orari, prezzi e prenotazioni vengono indicati, quando disponibili, i rispettivi siti ufficiali.
@@ -90,8 +91,9 @@ Quando si aggiunge o si rinomina una pagina pubblica, vanno aggiornati almeno na
 ├── museo-cioccolato.html      # Confronto tra i musei del cioccolato
 ├── arte-cultura.html          # Arte, musei e luoghi culturali
 ├── itinerari.html             # Itinerari di visita
-├── guide-pdf.html             # Indice delle guide editoriali gratuite
-├── chi-siamo.html             # Identità e indipendenza editoriale
+├── guide-pdf.html             # Indice delle guide tematiche gratuite
+├── citta-territori-cioccolato.html # Percorso tra città e territori del cioccolato
+├── chi-siamo.html             # Identità e indipendenza del progetto
 ├── privacy.html               # Privacy Policy
 ├── cookie.html                # Cookie Policy
 ├── termini.html               # Note legali
