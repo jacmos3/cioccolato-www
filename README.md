@@ -86,6 +86,7 @@ Quando si aggiunge o si rinomina una pagina pubblica, vanno aggiornati almeno na
 
 ```text
 .
+├── 404.html                   # Pagina restituita per risorse inesistenti
 ├── index.html                 # Homepage
 ├── centro-storico.html        # Guida al centro storico
 ├── museo-cioccolato.html      # Confronto tra i musei del cioccolato
@@ -127,6 +128,7 @@ Impostazioni Cloudflare Pages:
 
 | Campo | Valore |
 | --- | --- |
+| Project name | `perugiacioccolato` |
 | Production branch | `main` |
 | Build command | `./scripts/build-cloudflare-pages.sh` |
 | Build output directory | `dist` |
@@ -144,6 +146,7 @@ Prima della pubblicazione:
 
 Il sito utilizza o può collegarsi a servizi di terze parti:
 
+- Cloudflare Pages, CDN e DNS;
 - Google Fonts e Google Analytics;
 - siti ufficiali di musei, eventi, strutture e istituzioni.
 

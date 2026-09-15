@@ -8,6 +8,7 @@ rm -rf -- "$deploy_dir"
 mkdir -p "$deploy_dir"
 
 for public_file in \
+    404.html \
     index.html \
     arte-cultura.html \
     centro-storico.html \
