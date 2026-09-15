@@ -5,7 +5,7 @@
 <h1 align="center">Perugia: Città del Cioccolato</h1>
 
 <p align="center">
-  Guida editoriale indipendente dedicata a Perugia, alla sua tradizione cioccolatiera e al patrimonio culturale della città.
+  Guida online indipendente dedicata a Perugia, alla sua tradizione cioccolatiera e al patrimonio culturale della città.
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@ Il sito raccoglie contenuti e strumenti per organizzare una visita a Perugia:
 - rinvii informativi ai canali ufficiali dei soggetti citati.
 
 Il progetto è indipendente e non rappresenta musei, aziende, eventi o istituzioni citati nelle pagine. Per orari, prezzi e prenotazioni vengono indicati, quando disponibili, i rispettivi siti ufficiali.
-Il sito privilegia contenuti editoriali e rinvii ai canali ufficiali.
+Il sito privilegia contenuti informativi e rinvii ai canali ufficiali.
 
 ## Architettura
 
